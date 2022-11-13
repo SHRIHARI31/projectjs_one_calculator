@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../bs5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid overlay"></div>
+
+    <div class="container main-div">
+        <div class="container my_calculator">
+            <div class="container-fluid brand-div border ">
+                <span class="brand-name_1">casio</span>
+                <span class="brand-name_2">cs-21231</span>
+            </div>
+            <div class="container-fluid sub-brand-div border">
+                <span class="sub-brand" id="subrand">code-gΩd</span>
+            </div>
+            <div class="container-fluid calc-display-div  border text-center">
+                <input type="text" class="calc-display container-fluid" id="output-screen">
+            </div>
+            <div class="container-fluid buttons border">
+                <div class="container-fluid button-row  d-flex text-center ">
+
+                    <div class="button seven" onclick="display('7')">7</div>
+                    <div class="button eight" onclick="display('8')">8</div>
+                    <div class="button nine" onclick="display('9')">9</div>
+                    <div class="button del" onclick="del()">del</div>
+                    <div class="button ac" onclick="ac()">ac</div>
+
+                </div>
+                <div class="container-fluid button-row  d-flex  text-center">
+
+                    <div class="button four" onclick="display('4')">4</div>
+                    <div class="button five" onclick="display('5')">5</div>
+                    <div class="button six" onclick="display('6')">6</div>
+                    <div class="button mult " onclick="display('*')">x</div>
+                    <div class="button divide" onclick="display('%')">%</div>
+                </div>
+                <div class="container-fluid button-row  d-flex text-center">
+
+                    <div class="button one " onclick="display('1')">1</div>
+                    <div class="button two" onclick="display('2')">2</div>
+                    <div class="button three" onclick="display('3')">3</div>
+                    <div class="button add" onclick="display('+')">+</div>
+                    <div class="button sub" onclick="display('-')">-</div>
+                </div>
+                <div class="container-fluid  button-row  d-flex  text-center">
+
+                    <div class="button zero" onclick="display('0')">0</div>
+                    <div class="button deci" onclick="display('.')">.</div>
+                    <div class="button exp" onclick="display('exp')">exp</div>
+                    <div class="button ans" onclick="display('ans')">ans</div>
+                    <div class="button equal" onclick="equ()">=</div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="../bs5/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
